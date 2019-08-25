@@ -1,1 +1,16 @@
+spring:
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      server:
+        git:
+#          uri: file://E:/Projects/Formation/Java/microservices/microservices-configuration
+          uri: https://github.com/ajyanreyu/config-microservice
+          skipSslValidation: true
+          timeout: 5
+
+server:
+  port: 8888
 
